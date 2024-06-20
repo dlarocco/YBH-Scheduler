@@ -1,0 +1,28 @@
+<html>
+    <script src="https://yourbehavioralhealth1--sfdev.sandbox.my.site.com/admissions/lightning/lightning.out.js"></script>
+    <div data-lightning-out="true">
+        <script>
+            const appName = 'c:ScheduleAdmissionsCallApp';
+            const componentName = 'c:ScheduleAdmissionsCall';
+            const lightningEndpoint = 'https://yourbehavioralhealth1--sfdev.sandbox.my.site.com/admissions';
+            const targetElement = document.querySelector("[data-lightning-out]");
+            const componentAttributes = {
+
+            };
+
+            $Lightning.use(
+                appName,
+                function () {
+                    $Lightning.createComponent(
+                        componentName,
+                        componentAttributes,
+                        targetElement,
+                        function (cmp) {
+                        }
+                    );
+                },
+                lightningEndpoint
+            );
+        </script>
+    </div>
+</html>
